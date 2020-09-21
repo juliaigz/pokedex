@@ -1,0 +1,53 @@
+body{
+    font-family: 'Ranchers', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.letrapokemon{
+    font-family: 'Ranchers', cursive;
+}
+
+.container{
+   background-image: url("../assets/img/pokedex.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+  
+} 
+
+.container2{
+    background-image: url("../assets/img/pokedex.png");
+    padding: 385px 200px 385px 200px;
+}
+
+/*.marginMio{
+    margin-top: 190px;
+    margin-left: 30px;
+}   relativo siempre */
+
+
+.relative {
+    position: relative;/*relativo siempre */  
+    bottom:500px;
+  } 
+
+  div .absolute1 {
+    position: absolute;
+    top: 0rem;
+    right:250px;
+  }
+
+  div .absolute2 {
+    position: absolute;
+    top: 385px;
+    right: 850px;   
+  }
+
+  div .absolute3{  
+    position: absolute;
+    top: -98px;
+    right: 755px;
+  }
+
+ 
+ 

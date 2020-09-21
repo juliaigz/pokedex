@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- fonts tipo de letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="favicon" href="assets/img/pokeicono.jpg" type="image/jpg">
+   <!-- canvasjs-->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img width="100px" src="assets/img/pokemonlogo.png" alt="pokemonlogo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#buscador">Buscar Pokemon <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#descripcion">Descripción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">contacto</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link badge badge-primary text-wrap" href="autocompletar.html" target="_blank" tabindex="-1" aria-disabled="true" style="width: 9rem;">Consultar como se escribe el nombre de tu pokémon</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div>
+        <img src="assets/img/pokemonlogo.png"  width="500px" class="img-fluid mx-auto d-block mt-3" alt="Responsive image logo pokemon">  
+       <!-- <img class="mx-auto d-block mt-3" width="500px"src="assets/img/pokemonlogo.png" alt="logo pokemon">-->
+        <div class="h-30"></div>
+        <h1 class="text-center letrapokemon">Pokédex</h1>
+    </div>
+    
+
+    
+    <nav id="buscador"class="navbar navbar-light bg-dark">
+       
+        <form id="buscarPorId"  class="form-inline mx-auto d-block mt-3 mb-3 " >
+          <p class="text-white text-center font-weight-lighter">Busca tu pokémon por nombre o número</p>
+          <input id="idInput" class="form-control mr-sm-2 basicAutoComplete"  autocomplete="on" type="search" placeholder="Busca tu pokémon por nombre o nro" aria-label="Search">
+          <a href="#descripcion"><button id="botoncito" class="btn btn-outline-success my-2 my-sm-0" type="button">Buscar</button> </a>
+        </form>
+      </nav>
+      
+
+
+       <!-- jimmy-->
+       <div id="descripcion" class="container container2 img-fluid mb-3 mt-3 ">     
+       </div>
+
+       <div class=" relative">
+        <div id="tarjeta" class="absolute1"><img id="idImagen" src="..." class="card-img-top" alt="..."></div>
+        <div id="tarjeta1" class="absolute2"><h1  id="contenedor" class="card-title text-center mb-5">Card title</h1></div>
+        <div  id="columna2" class="absolute3">  </div>  
+      </div>
+      
+
+
+
+
+       <!--<div class="container">
+
+        <div class="row">
+          <div id="columna2" class="col-6">
+            
+          </div>
+          <div  id="tarjeta" class="col-6">
+            <img id="idImagen" src="..." class="card-img-top" alt="...">
+          </div> 
+        </div>
+
+        <div class="row">
+          <div  class="col-6">
+            <h2  id="contenedorTitulo" class="card-title mt-5 mb-5">Card title</h2>
+          </div>
+          <div   class="col-6">
+           
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="tarjeta1" class="col-6">
+            <h1  id="contenedor" class="card-title text-center mb-5">Card title</h1>
+          </div>
+          <div  class="col-6">
+           
+          </div>
+        </div>
+
+      </div> -->
+        
+
+        <!--<div id="tarjeta" class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 card " style="width: 18rem;">
+          <img id="idImagen" src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5  id="contenedor" class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+      </div>-->
+      
+      <!-- contenedor de imagen grafico -->
+      
+           <!-- <div id="contenedor">
+        <img id="idImagen" src="" />
+
+      </div>-->
+
+
+  
+      <footer id="contacto" class="bg-light pb-3 pt-3">
+        <div class="mb-1 mt-4 text-center">
+          <img width="85px" src="assets/img/pokeicono.jpg" alt="pokebola">
+        </div>
+        <h2  class="bg-light text-red text-center mb-0 text-decoration-none ">  
+          <a href="http://facebook.com/pusakuy" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/startup.innovation.lab/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="http://www.youtube.com/c/startupinnovationlab" target="_blank"><i class="fab fa-youtube-square"></i></a>
+        </h2>
+        <div class=" mb-3 text-center text-secondary ">
+          <p>© 2020 Pokémon Latam. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    
+
+
+    <!-- Jquery Antigue-->
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <!--<script>var jqAntiguo=$.noConflict();</script>-->
+
+    <!-- Jquery CDN minified - JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script>var jqNuevo=$.noConflict();</script>
+        <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+ <!--<script>
+
+
+
+  $("#buscarPorId").submit(function () {
+  
+      let idInput = $("#idInput").val();
+      $.ajax({
+          type: "GET",
+          url: " https://pokeapi.co/api/v2/pokemon/" + idInput,
+          dataType: "json",
+          success: function (data) {   
+              console.log(data);
+              $("#contenedor").text(data.name);
+               $("#contenedor").append("<p>" + data.name + "</p>");
+              $("#idImagen").attr("src", data.sprites.front_default);
+          }
+      });
+
+      return false;
+  });-->
+
+  
+
+
+</script>
+
+
+
+
+</body>
+</html>
